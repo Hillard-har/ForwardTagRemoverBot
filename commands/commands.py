@@ -33,7 +33,7 @@ reply_markup = InlineKeyboardMarkup(keyboard)
 def startMessage(update,context):
  try:
   update.message.reply_text(Config.START_TEXT.format(update.message.from_user.full_name,update.message.chat.id),reply_markup=reply_markup,
-parse_mode=ParseMode.MARKDOWN)
+parse_mode=ParseMode.MARKDOWN,disable_web_page_preview=True)
  except Exception as e:
  	update.message.reply_text(e)
 

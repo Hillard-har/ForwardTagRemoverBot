@@ -27,8 +27,8 @@ def sendFile(update,context):
 #To get the incoming file name 
 
  try:
-        file_name = update.message.document.file_name
-  	update.message.reply_document(update.message.document.file_id,caption=file_name+"\n@Anylink_Movies",parse_mode=ParseMode.MARKDOWN)
+        file_name=update.message.document.file_name
+  	update.message.reply_document(update.message.document.file_id,caption=file_name) #+"\n@Anylink_Movies")
  except Exception as e:
   	update.message.reply_text(e)
   	

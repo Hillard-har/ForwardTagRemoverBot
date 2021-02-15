@@ -23,7 +23,7 @@ keyboard = [
  InlineKeyboardButton("CREATOR", url="https://t.me/Ts_bots")
 ],
 [
- InlineKeyboardButton("CHANNEL",callback_data ="https://telegram.me/Anylink_Movies")
+ InlineKeyboardButton("CHANNEL",url ="https://telegram.me/Anylink_Movies")
  #InlineKeyboardButton("CLOSE", url="https://t.me/Ts_bots")
 ]
 ]

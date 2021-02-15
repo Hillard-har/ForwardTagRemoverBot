@@ -24,7 +24,8 @@ def sendMedia(update,context):
 #Function to send file
 def sendFile(update,context):  
  try:
-  	update.message.reply_document(update.message.document.file_id,caption=update.message.document.file_name) #+"\n@Anylink_Movies")
+   file_name = update.message.document.file_name
+   update.message.reply_document(update.message.document.file_id,caption=file_name) #+"\n@Anylink_Movies")
  except Exception as e:
   	update.message.reply_text(e)
   	

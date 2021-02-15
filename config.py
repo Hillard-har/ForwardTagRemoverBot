@@ -29,5 +29,13 @@ class Config:
 ⚜️ ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ 👉 [ᴛʀᴀᴄᴋsᴛᴜᴅɪᴏ](https://t.me/trackstudio)
 
 """
- HELP_TEXT="Forward Me A File,Video,Audio,Photo or Anything And \nI will Send You the File Back\n\n`How to Set Caption?`\nReply Caption to a File,Photo,Audio,Media"
+
+ HELP_TEXT="""
+💡 𝐇𝐞𝐥𝐩
+
+ғᴏʀᴡᴀʀᴅ ᴍᴇ ᴀɴʏ ᴛʏᴘᴇ ᴏғ ᴍᴇᴅɪᴀ ᴀɴᴅ ɪ ᴡɪʟʟ ғᴏʀᴡᴀʀᴅ ɪᴛ ғᴏʀ ʏᴏᴜ ᴡɪᴛʜᴏᴜᴛ ғᴏʀᴡᴀʀᴅ ᴛᴀɢ 
+
+ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ sᴇᴛ ᴀ ᴄᴀᴘᴛɪᴏɴ ᴛᴏ ᴛʜᴇ ғɪʟᴇ ʙʏ ʀᴇᴘʟʏɪɴɢ ʏᴏᴜʀ ᴄᴀᴘᴛɪᴏɴ ᴛᴏ ᴛʜᴇ ғɪʟᴇ
+
+"""
 	

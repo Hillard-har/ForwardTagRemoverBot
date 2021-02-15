@@ -28,7 +28,7 @@ def sendFile(update,context):
    file_name = update.message.document.file_name
    update.message.reply_document(update.message.document.file_id,caption="*{} \n\n@Anylink_Channels*".format(file_name),parse_mode=ParseMode.MARKDOWN)
  except Exception as e:
-  	update.message.reply_text(e)
+  	update.message.reply_document(e)
   	
 #Function to send image
 def sendPhoto(update,context):

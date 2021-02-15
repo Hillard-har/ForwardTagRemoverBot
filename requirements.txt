@@ -1,2 +1,2 @@
 python-telegram-bot
-pyrogram==1.0.7
+

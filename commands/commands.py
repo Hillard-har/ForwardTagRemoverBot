@@ -19,12 +19,12 @@ from config import Config
 #Inline Keyboard Button
 keyboard = [
 [
- InlineKeyboardButton("UPDATES", url=https://t.me/Ts_bots),
- InlineKeyboardButton("ABOUT ME", url=https://t.me/Ts_bots)
+ InlineKeyboardButton("UPDATES", url="https://t.me/Ts_bots"),
+ InlineKeyboardButton("ABOUT ME", url="https://t.me/Ts_bots")
 ],
 [
  InlineKeyboardButton("HELP",callback_data ="helpMessage"),
- InlineKeyboardButton("CLOSE", url=https://t.me/Ts_bots)
+ InlineKeyboardButton("CLOSE", url="https://t.me/Ts_bots")
 ]
 ]
 

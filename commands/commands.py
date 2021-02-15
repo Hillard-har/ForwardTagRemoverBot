@@ -23,7 +23,7 @@ keyboard = [
  InlineKeyboardButton("ABOUT ME", url=https://t.me/Ts_bots)
 ],
 [
- InlineKeyboardButton("HELP",url="https://youtu.be/swg6un2N4Fk"),
+ InlineKeyboardButton("HELP",callback_data ="helpMessage"),
  InlineKeyboardButton("CLOSE", url=https://t.me/Ts_bots)
 ]
 ]

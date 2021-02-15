@@ -20,11 +20,11 @@ from config import Config
 keyboard = [
 [
  InlineKeyboardButton("UPDATES", url="https://t.me/Ts_bots"),
- InlineKeyboardButton("ABOUT ME", url="https://t.me/Ts_bots")
+ InlineKeyboardButton("CREATOR", url="https://t.me/Ts_bots")
 ],
 [
- InlineKeyboardButton("HELP",callback_data ="helpMessage"),
- InlineKeyboardButton("CLOSE", url="https://t.me/Ts_bots")
+ InlineKeyboardButton("CHANNEL",callback_data ="https://telegram.me/Anylink_Movies")
+ #InlineKeyboardButton("CLOSE", url="https://t.me/Ts_bots")
 ]
 ]
 
@@ -41,13 +41,8 @@ parse_mode=ParseMode.MARKDOWN,disable_web_page_preview=True)
 
 #Help Message
 def helpMessage(update,context):
-#Try to remove old message
-    try:
-        query = context.callback_query
-        query.message.delete()
-    except:
-        pass
- #try:
+
+ try:
     update.message.reply_text(Config.HELP_TEXT,reply_markup=reply_markup,parse_mode=ParseMode.MARKDOWN)
- #except Exception as e:
+ except Exception as e:
   	#update.message.reply_text(e)

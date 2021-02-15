@@ -43,7 +43,7 @@ parse_mode=ParseMode.MARKDOWN,disable_web_page_preview=True)
 def helpMessage(update,context):
 #Try to remove old message
     try:
-        query = update.callback_query
+        query = context.callback_query
         query.message.delete()
     except:
         pass

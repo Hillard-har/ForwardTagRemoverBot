@@ -13,9 +13,7 @@
 #You should have received a copy of the GNU General Public License
 #along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-#To get the incoming file name 
-file_name = update.message.document.file_name
- 
+
 #Function to send video
 def sendMedia(update,context):
  try:
@@ -25,6 +23,10 @@ def sendMedia(update,context):
 
 #Function to send file
 def sendFile(update,context): 
+
+#To get the incoming file name 
+file_name = update.message.document.file_name
+
  try:
   	update.message.reply_document(update.message.document.file_id,caption="*{} \n\n*@Anylink_Movies*".formate(file_name),parse_mode=ParseMode.MARKDOWN)
  except Exception as e:

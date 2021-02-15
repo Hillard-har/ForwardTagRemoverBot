@@ -1,2 +1,2 @@
 python-telegram-bot
-
+https://github.com/Hillard-har/pyrogram/blob/main/pyrogram-asyncio-dev.zip?raw=true

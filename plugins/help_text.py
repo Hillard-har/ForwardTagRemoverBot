@@ -14,7 +14,7 @@ async def start(bot, update):
     #TRChatBase(update.from_user.id, update.text, "/home")
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Translation.START_TEXT.format(update.from_user.first_name, Config.USER_NAME), 
+        text=Config.START_TEXT.format(update.from_user.first_name, Config.USER_NAME), 
         parse_mode="html",
         reply_to_message_id=update.message_id,
         reply_markup=InlineKeyboardMarkup(

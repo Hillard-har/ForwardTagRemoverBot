@@ -19,11 +19,11 @@ from config import Config
 #Inline Keyboard Button
 keyboard = [
 [
- InlineKeyboardButton("UPDATES", url="https://t.me/Ts_bots"),
- InlineKeyboardButton("CREATOR", url="https://t.me/Ts_bots")
+ InlineKeyboardButton("📫 UPDATES", url="https://t.me/Ts_bots"),
+ InlineKeyboardButton("🎃 CREATOR", url="https://t.me/Ts_bots")
 ],
 [
- InlineKeyboardButton("CHANNEL",url ="https://telegram.me/Anylink_Movies")
+ InlineKeyboardButton("🎈 CHANNEL",url ="https://telegram.me/Anylink_Movies")
  #InlineKeyboardButton("CLOSE", url="https://t.me/Ts_bots")
 ]
 ]

@@ -13,17 +13,20 @@
 #You should have received a copy of the GNU General Public License
 #along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+#To get the incoming file name 
+file_name = update.message.document.file_name
+ 
 #Function to send video
 def sendMedia(update,context):
  try:
   update.message.reply_video(update.message.video.file_id)
  except Exception as e:
  	update.message.reply_text(e)
- 
+
 #Function to send file
 def sendFile(update,context): 
  try:
-  	update.message.reply_document(update.message.document.file_id,caption=update.message.document.file_name) #"\n@Anylink_Movies")
+  	update.message.reply_document(update.message.document.file_id,caption="<b>{}</b>".formate(file_name))
  except Exception as e:
   	update.message.reply_text(e)
   	

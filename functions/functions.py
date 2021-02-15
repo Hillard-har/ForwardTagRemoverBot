@@ -25,7 +25,7 @@ def sendMedia(update,context):
 def sendFile(update,context):  
  try:
    file_name = update.message.document.file_name
-   update.message.reply_document(update.message.document.file_id,caption="*{} \n\n@Anylink_Channels*".formate(file_name),parse_mode=ParseMode.MARKDOWN)
+   update.message.reply_document(update.message.document.file_id,caption="*{} \n\n@Anylink_Channels*".format(file_name),parse_mode=ParseMode.MARKDOWN)
  except Exception as e:
   	update.message.reply_text(e)
   	

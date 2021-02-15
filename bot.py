@@ -37,19 +37,19 @@ dp.add_handler(MessageHandler(Filters.document,sendFile))
 dp.add_handler(MessageHandler(Filters.video,sendMedia))
 
 #Photos
-dp.add_handler(MessageHandler(Filters.photo,sendPhoto))
+#dp.add_handler(MessageHandler(Filters.photo,sendPhoto))
 
 #Text & Caption
-dp.add_handler(MessageHandler(Filters.text,setCaption))
+#dp.add_handler(MessageHandler(Filters.text,setCaption))
 
 #Stickers
-dp.add_handler(MessageHandler(Filters.sticker,sendSticker))
+#dp.add_handler(MessageHandler(Filters.sticker,sendSticker))
 
 #Voice
-dp.add_handler(MessageHandler(Filters.voice,sendVoice))
+#dp.add_handler(MessageHandler(Filters.voice,sendVoice))
 
 #Audio
-dp.add_handler(MessageHandler(Filters.audio,sendAudio))
+#dp.add_handler(MessageHandler(Filters.audio,sendAudio))
 
 updater.start_polling()
 updater.idle()

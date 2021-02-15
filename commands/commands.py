@@ -41,7 +41,13 @@ parse_mode=ParseMode.MARKDOWN,disable_web_page_preview=True)
 
 #Help Message
 def helpMessage(update,context):
- try:
-   update.message.reply_text(Config.HELP_TEXT,reply_markup=reply_markup,parse_mode=ParseMode.MARKDOWN)
- except Exception as e:
-  	update.message.reply_text(e)
+#Try to remove old message
+    try:
+        query = update.callback_query
+        query.message.delete()
+    except:
+        pass
+ #try:
+    update.message.reply_text(Config.HELP_TEXT,reply_markup=reply_markup,parse_mode=ParseMode.MARKDOWN)
+ #except Exception as e:
+  	#update.message.reply_text(e)
